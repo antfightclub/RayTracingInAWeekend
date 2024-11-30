@@ -6,12 +6,13 @@
 class camera {
 public:
 	double aspect_ratio = 1.0; // Ratio of image width over height
-	int image_width = 100; // Pixels
+	int    image_width  = 100; // Pixels
 
 	void render(const hittable& world) {
 		initialize();
 
 		std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
+
 		for (int j = 0; j < image_height; j++) {
 			std::clog << "\rScanlines remaining: " << (image_height - j) << ' ' << std::flush;
 			for (int i = 0; i < image_width; i++) {
@@ -28,17 +29,22 @@ public:
 	}
 
 private:
-	int image_height;
+	int    image_height;
 	point3 center;
 	point3 pixel00_loc;
-	vec3 pixel_delta_u;
-	vec3 pixel_delta_v;
+	vec3   pixel_delta_u;
+	vec3   pixel_delta_v;
 
 	void initialize() {
+		image_height = int(image_width / aspect_ratio);
+		image_height = (image_height < 1) ? 1 : image_height;
+
+		center = point3(0, 0, 0);
+
+		// Determine viewport dimensions
 		auto focal_length = 1.0;
 		auto viewport_height = 2.0;
 		auto viewport_width = viewport_height * (double(image_width) / image_height);
-		auto camera_center = point3(0, 0, 0);
 
 		// Calculate the vectors across the horizontal and down the vertical viewport edges
 		auto viewport_u = vec3(viewport_width, 0, 0);
@@ -49,12 +55,13 @@ private:
 		auto pixel_delta_v = viewport_v / image_height;
 
 		// Calculate the location of the upper left pixel
-		auto viewport_upper_left = camera_center - vec3(0, 0, focal_length) - viewport_u / 2 - viewport_v / 2;
+		auto viewport_upper_left = center - vec3(0, 0, focal_length) - viewport_u / 2 - viewport_v / 2;
 		auto pixel00_loc = viewport_upper_left + 0.5 * (pixel_delta_u + pixel_delta_v);
 	}
 
 	color ray_color(const ray& r, const hittable& world) const {
 		hit_record rec;
+
 		if (world.hit(r, interval(0, infinity), rec)) {
 			return 0.5 * (rec.normal + color(1, 1, 1));
 		}
