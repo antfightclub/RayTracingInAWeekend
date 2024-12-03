@@ -10,3 +10,6 @@ In Visual Studio Community 2022, open developer command prompt. Navigate to .\x6
 RayTracingInAWeekend.exe > image-title.ppm
 ```
 This will create a .ppm file ontaining the result of the render. Open it in GIMP or ImageMagick.
+
+### Project structure
+Each book is in its own folder. Inside the book's folder is the source, as well as an Images folder which contains the output for each subsection.
