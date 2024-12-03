@@ -19,7 +19,7 @@ public:
 	{
 		auto rvec = vec3(radius, radius, radius);
 		aabb box1(center.at(0) - rvec, center.at(0) + rvec);
-		aabb box2(center.at(1) - rvec, center.at(0) + rvec);
+		aabb box2(center.at(1) - rvec, center.at(1) + rvec);
 		bbox = aabb(box1, box2);
 	}
 
