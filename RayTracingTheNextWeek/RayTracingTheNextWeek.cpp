@@ -6,6 +6,7 @@
 #include "hittable_list.h"
 #include "sphere.h"
 #include "texture.h"
+#include "quad.h"
 
 
 void bouncing_spheres()
