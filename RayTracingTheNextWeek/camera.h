@@ -1,6 +1,10 @@
 #ifndef CAMERA_H
 #define CAMERA_H
 
+#include <chrono>
+#include <time.h>
+#define  _CRT_SECURE_NO_WARNINGS
+#include "Timer.h"
 #include "hittable.h"
 #include "material.h"
 
@@ -21,7 +25,9 @@ public:
 	double focus_dist = 10;
 
 	void render(const hittable& world) {
+		Timer t;
 		initialize();
+		
 
 		std::cout << "P3\n" << image_width << ' ' << image_height << "\n255\n";
 
@@ -37,7 +43,9 @@ public:
 			}
 		}
 
-		std::clog << "\rDone.                       \n";
+		std::clog << "\rDone.                       \n" <<
+			"Seconds taken: " << t.elapsed() << " seconds\n"
+			<< " Hours  taken: " << (t.elapsed() / 3600) << " hours";
 	}
 
 private:
