@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="main.cc" />
+    <ClCompile Include="integrate_x_sq.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aabb.h" />
