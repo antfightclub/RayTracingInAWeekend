@@ -4,7 +4,7 @@ My adventures with following Peter Shirley, Trevor David Black, and Steve Hollas
 Progress so far:
 - [x] [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
 - [x] [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html)
-- [ ] [_Ray Tracing: The Rest of Your Life_](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html)
+- [x] [_Ray Tracing: The Rest of Your Life_](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html)
 
 ### Instructions on running
 In Visual Studio Community 2022, open developer command prompt. Navigate to .\x64\Release or Debug. Then run
