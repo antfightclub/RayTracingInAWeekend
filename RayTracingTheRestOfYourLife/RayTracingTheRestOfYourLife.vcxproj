@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="estimate_halfway.cc" />
+    <ClCompile Include="integrate_x_sq.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aabb.h" />
