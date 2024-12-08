@@ -127,7 +127,27 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="RayTracingTheRestOfYourLife.cpp" />
+    <ClCompile Include="pi.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aabb.h" />
+    <ClInclude Include="bvh.h" />
+    <ClInclude Include="camera.h" />
+    <ClInclude Include="color.h" />
+    <ClInclude Include="constant_medium.h" />
+    <ClInclude Include="hittable.h" />
+    <ClInclude Include="hittable_list.h" />
+    <ClInclude Include="interval.h" />
+    <ClInclude Include="material.h" />
+    <ClInclude Include="perlin.h" />
+    <ClInclude Include="quad.h" />
+    <ClInclude Include="ray.h" />
+    <ClInclude Include="rtweekend.h" />
+    <ClInclude Include="rtw_stb_image.h" />
+    <ClInclude Include="sphere.h" />
+    <ClInclude Include="texture.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="vec3.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
