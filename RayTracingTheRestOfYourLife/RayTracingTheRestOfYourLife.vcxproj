@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="sphere_plot.cc" />
+    <ClCompile Include="cos_cubed.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aabb.h" />
