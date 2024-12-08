@@ -11,7 +11,7 @@ int main() {
 
 	for (int i = 0; i < N; i++) {
 		auto x = random_double(a, b);
-		sum += std::pow(std::sin(x), 5.0);
+		sum += x * x;
 	}
 
 	std::cout << std::fixed << std::setprecision(12);
