@@ -1,7 +1,7 @@
 # Ray Tracing in One Weekend
 My adventures with following Peter Shirley, Trevor David Black, and Steve Hollasch's ray tracing books. 
 
-Progress so far:
+Progress:
 - [x] [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html)
 - [x] [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html)
 - [x] [_Ray Tracing: The Rest of Your Life_](https://raytracing.github.io/books/RayTracingTheRestOfYourLife.html)
