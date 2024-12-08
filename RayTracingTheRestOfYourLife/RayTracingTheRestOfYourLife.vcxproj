@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="cos_cubed.cc" />
+    <ClCompile Include="cos_density.cc" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="aabb.h" />
