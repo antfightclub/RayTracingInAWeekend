@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="integrate_x_sq.cc">
+    <ClCompile Include="estimate_halfway.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
